@@ -1,0 +1,46 @@
+{
+  "args": {
+    "data": "data/magnetic_reconnection_512x512x512_float32.nc",
+    "save_dir": "example_run",
+    "entropy_lambda": 0.005,
+    "feature_grid_shape": "16,32,64,128,256",
+    "n_features_per_level": "16,8,8,4,4",
+    "iterations": 20000,
+    "lr": 0.01,
+    "points_per_iteration": 65536,
+    "log_every": 2000,
+    "device": "cuda:0"
+  },
+  "opt": {
+    "n_features": null,
+    "n_features_per_level": "16,8,8,4,4",
+    "feature_grid_shape": "16,32,64,128,256",
+    "n_layers": 2,
+    "nodes_per_layer": 64,
+    "n_outputs": 1,
+    "num_positional_encoding_terms": 0,
+    "full_shape": [
+      512,
+      512,
+      512
+    ],
+    "data_min": -1.0,
+    "data_max": 1.0
+  },
+  "training_time_s": 238.85793709754944,
+  "raw_size_bytes": 536870912,
+  "evaluations": [
+    {
+      "lambda": 0.005,
+      "psnr_db": 46.119575041386405,
+      "mse": 9.774678619578481e-05,
+      "features_bytes": 137949,
+      "rest_pt_bytes": 32615,
+      "cr_total": 3147.6214910532117,
+      "encode_time_s": 8.225956678390503,
+      "compress_time_s": 247.08389377593994
+    }
+  ],
+  "encode_time_s": 8.225956678390503,
+  "compress_time_s": 247.08389377593994
+}

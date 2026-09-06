@@ -1,0 +1,7 @@
+# Runtime dependencies (PyTorch installed separately — see README).
+numpy>=1.23,<2.0
+torchac>=0.9.3
+netCDF4>=1.6
+# rendering only (renderer.py)
+nerfacc>=0.5
+imageio>=2.25
